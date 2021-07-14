@@ -16,7 +16,7 @@
         <div id="map" class="map"></div>
         <script type="text/javascript">
 		    console.log("Hello")
-            let baseURL = 'http://ec2-3-15-140-86.us-east-2.compute.amazonaws.com:8080/geoserver/wms'
+            let baseURL = 'http://ec2-3-15-148-89.us-east-2.compute.amazonaws.com:8080/geoserver/wms'
             var map = new ol.Map({
               target: 'map',
               layers: [
@@ -41,17 +41,6 @@
 			      crossOrigin: 'anonymous'
                   }),
         }),
-		/*
-			  new ol.layer.Image({
-                  source: new ol.source.ImageWMS({
-                  url: baseURL,
-                  params: {'LAYERS': 'gis:processed_ghs'},
-                  ratio: 1,
-                  serverType: 'geoserver',
-			      crossOrigin: 'anonymous'
-                  }),
-        }),
-		*/
               ],
               view: new ol.View({
                 center: ol.proj.fromLonLat([9.5, 45.5]),
